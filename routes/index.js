@@ -8,8 +8,8 @@ const {upload}=require("../middleware/multer")
 //   res.render('index', { title: 'Express' });
 // });
 
-router.post("/create-event" ,upload,adminController.creteEvent)
-router.get("/event",adminController.viewEvent)
-router.delete("/delete-event/:id",adminController.deleteEvent)
+router.post("/api/create-event" ,upload,adminController.creteEvent)
+router.get("/api/event",adminController.viewEvent)
+router.delete("/api/delete-event/:id",adminController.deleteEvent)
 
 module.exports = router;
